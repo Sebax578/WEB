@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema AgroGestión - Comercializadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="brand">
+            <i class="fas fa-seedling"></i>
+            <h2> ADFKS Agro</h2>
+        </div>
+        <ul>
+            <li><a href="#productos"><i class="fas fa-box"></i> Productos</a></li>
+            <li><a href="#clientes"><i class="fas fa-users"></i> Clientes</a></li>
+            <li><a href="#pedidos"><i class="fas fa-clipboard-list"></i> Pedidos</a></li>
+            <li><a href="#pagos"><i class="fas fa-credit-card"></i> Pagos</a></li>
+            <li><a href="#informes"><i class="fas fa-chart-line"></i> Estadísticas</a></li>
+        </ul>
+    </div>
+
+    <main class="content">
+        <header>
+            <div class="header-title">
+                <h1>Panel de Gestión Agrícola</h1>
+                <p>Uso exclusivo para empleados</p>
+            </div>
+            <div class="user-info">
+                <span><i class="fas fa-user-tie"></i> Sebastian Montes</span>
+                <button class="btn-logout">Salir</button>
+            </div>
+        </header>
+
+        <section id="productos" class="modulo">
+            <div class="section-header">
+                <h2><i class="fas fa-inventory"></i> Inventario de Productos</h2>
+                <div class="acciones">
+                    <button class="btn-add">+ Registrar Producto</button>
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar por nombre, tipo o variedad...">
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Variedad</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maíz Blanco</td>
+                        <td>Cereal</td>
+                        <td>Premium</td>
+                        <td>$2.500 / kg</td>
+                        <td>500</td>
+                        <td>
+                            <button class="btn-icon edit" title="Editar"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icon delete" title="Eliminar"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html
